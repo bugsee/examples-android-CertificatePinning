@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bugsee.shared.certificatepinning.MainActivity"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:text="OkHttp CertificatePinner"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18dp"/>
+
+    <Button android:id="@+id/okhttp_check_wrong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Try wrong certificate"/>
+
+    <Button android:id="@+id/okhttp_check_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Try right certificate"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:text="TrustKit-Android"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18dp"
+        android:layout_marginTop="16dp"/>
+
+    <Button android:id="@+id/trustkit_check_wrong_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Try wrong certificate"/>
+
+    <Button android:id="@+id/trustkit_check_right_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Try right certificate"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:text="CWAC-NetSecurity"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18dp"
+        android:layout_marginTop="16dp"/>
+
+    <Button android:id="@+id/netsecurity_check_wrong_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Try wrong certificate"/>
+
+    <Button android:id="@+id/netsecurity_check_right_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Try right certificate"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:text="Android N Network Security Configuration"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18dp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:text="Works on Android API 24+."
+        android:layout_gravity="center_horizontal"
+        android:textSize="14dp"/>
+
+    <Button android:id="@+id/native_check_wrong_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Try wrong certificate"/>
+
+    <Button android:id="@+id/native_check_right_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Try right certificate"/>
+</LinearLayout>

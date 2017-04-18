@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config>
+        <!--right pin-->
+        <domain includeSubdomains="true">stackoverflow.com</domain>
+        <pin-set>
+            <pin digest="SHA-256">2zKehMv7KtnGBz1d2U0bFrAOKb1aWWlrG9a0BzrOvwA=</pin>
+            <pin digest="SHA-256">k2v657xBsOVe1PQRwOsHsw3bsGT2VzIqz5K+59sNQws=</pin>
+        </pin-set>
+
+        <!-- TrustKit Android API -->
+        <trustkit-config enforcePinning="true">
+        </trustkit-config>
+    </domain-config>
+    <domain-config>
+        <!--wrong pin-->
+        <domain includeSubdomains="true">www.bugsee.com</domain>
+        <pin-set>
+            <pin digest="SHA-256">k3XnEYQCK79AtL9GYnT/nyhsabas03V+bhRQYHQbpXU=</pin>
+            <pin digest="SHA-256">2kOi4HdYYsvTR1sTIR7RHwlf2SescTrpza9ZrWy7poQ=</pin>
+        </pin-set>
+
+        <!-- TrustKit Android API -->
+        <trustkit-config enforcePinning="true">
+        </trustkit-config>
+    </domain-config>
+</network-security-config>
